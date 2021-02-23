@@ -1,10 +1,7 @@
-- 👋 Hi, I’m Wu Junkai
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-WuJunkai2004/WuJunkai2004 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+### Hi,I am Wu Junkai  
+　　2004 is the year I was born.  
+　　Now , I am a senior high school students in China.  
+　　I love Minecraft and coding.  
+<body
+  onload="invokeMyFunction(function bar(){alert('he');})"
+></body>
