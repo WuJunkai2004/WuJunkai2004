@@ -27,7 +27,7 @@ class handler(vercel.API):
 
         global tag
 
-        if(tag):
+        if(not tag):
             try:
                 tag = url.split('#')[1]
             except IndexError:
