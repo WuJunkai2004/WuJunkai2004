@@ -21,7 +21,7 @@ def get(tag):
     except BaseException as e:
         return 'Net Error :\n' + ' '.join(map(str,list(e.args)))
 
-class handle(vercel.API):
+class handler(vercel.API):
     def vercel(self, url, data, headers):
         self.send_code(200)
 
