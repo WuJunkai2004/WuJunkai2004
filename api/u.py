@@ -25,6 +25,8 @@ class handler(vercel.API):
     def vercel(self, url, data, headers):
         self.send_code(200)
 
+        global tag
+
         if(tag):
             try:
                 tag = url.split('#')[1]
