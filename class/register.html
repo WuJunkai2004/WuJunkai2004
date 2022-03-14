@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>7班签到</title>
+        <style type="text/css">
+            body {
+                background-color: #f1f1f1;
+                margin: 0;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            .container {
+                margin: 50px auto 40px auto;
+                width: 600px;
+                text-align: center; 
+            }
+            h1 { 
+                width: 800px;
+                position:relative; 
+                left: -100px; 
+                letter-spacing: -1px; 
+                line-height: 60px; 
+                font-size: 60px; 
+                font-weight: 100; 
+                margin: 0px 0 50px 0; 
+                text-shadow: 0 1px 0 #fff; 
+            }
+            p { 
+                color: rgba(0, 0, 0, 0.5);  
+                margin: 20px 0; 
+                line-height: 1.6; 
+            }
+            button{
+                line-height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>签到</h1>
+            <select id="stu">
+            </select>
+            <p>
+                <strong id="got"></strong>
+            </p>
+            <p></p>
+            <button onclick="gets()">确认签到</button>
+        </div>
+        <script>
+            stu={'1':'白文锴','2':'蔡宇腾','3':'陈冠豪','4':'陈珏铭','5':'邓培哲','6':'丁浩文','7':'杜皓铭','8':'傅婧雯','9':'关乙澄','10':'洪昊森','11':'黄润泓','12':'黄逸','13':'黄昱曦','14':'黄智垚','15':'赖敬豪','16':'赖乔宇','17':'李萍芸','18':'李荣聪','19':'林冰洁','20':'林灿锋','21':'林晖尧','22':'林晶盈','23':'林少伟','24':'林伟昊','25':'林钰杰','26':'林煜坤','27':'刘宇轩','28':'刘铮','29':'柳楷宁','30':'卢威宇','31':'施璟锽','32':'苏雅茹','33':'苏泽全','34':'王灿斌','35':'王灿雄','36':'王鸿霖','37':'王诗维','38':'王鑫萍','39':'王轩铭','40':'王彦喆','41':'魏杜钰','42':'吴君凯','43':'谢韬烨','44':'熊启鑫','45':'殷正天','46':'岳卓岩','47':'张伯涵','48':'张玥','49':'赵璐','50':'郑博燊','51':'钟宇鹏','52':'周昕颖','53':'庄文杰','54':'庄仲煜'};
+            se = document.getElementById('stu')
+            for(i=1;i<=54;i++){
+                op = document.createElement('option');
+                op.value=i;op.innerText=stu[i];
+                se.appendChild(op)
+            }
+        </script>
+        <script>
+            function gets(){
+                s = document.getElementById('got')
+                se.hidden = true
+                s.innerText = se.value +'号'+stu[se.value]+'已签到'
+            }
+        </script>
+    </body>
+</html>
