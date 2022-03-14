@@ -23,11 +23,11 @@ class handler(vercel.API):
             'Access-Control-Request-Headers': '*',
             'api-key': 'eOYzarNsIRJ7h9n0JEWGqa59yMKN6i8u1temFAmjRDz3qLzDIfAHRFX8A8ESPwnx'
         }
-        for i in range(10):
+        for i in range(5):
             try:
                 response = requests.post(url, headers=headers, data=payload)
             except:
-                time.sleep(0.1)
+                time.sleep(0.05)
             else:
                 self.send_code(200)
                 self.send_text(response.text)
