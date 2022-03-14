@@ -31,6 +31,8 @@ class handler(vercel.API):
             else:
                 self.send_code(200)
                 self.send_text(response.text)
+                break
+                return
         else:
             self.send_code(200)
             self.send_text(json.dumps({"upload":"fail","error":"Net Error"}))
