@@ -4,7 +4,8 @@ jobs:
   build:
     runs-on: macos-14 # GitHub 的 macos-14 及以上版本默认分配 M1 ARM64 机器
     steps:
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+      - name: Setup upterm session
+        uses: owenthereal/action-upterm@v2 # tmate 已被上游弃用,2026-12-11 停用
         with:
           detached: true
+          wait-timeout-minutes: 60 # 步骤跑完后,最多等 60 分钟供你连接
