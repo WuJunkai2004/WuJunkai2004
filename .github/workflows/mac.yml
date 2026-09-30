@@ -1,0 +1,10 @@
+name: Mac ARM Temporary VPS
+on: [workflow_dispatch] # 允许在网页端手动触发
+jobs:
+  build:
+    runs-on: macos-14 # GitHub 的 macos-14 及以上版本默认分配 M1 ARM64 机器
+    steps:
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        with:
+          detached: true
